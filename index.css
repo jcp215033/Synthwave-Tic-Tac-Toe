@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url("https://wallpapercave.com/wp/wp2343900.png")
+    /* background-image:url('https://im2.ezgif.com/tmp/ezgif-2-1047e6d052.gif'); 
+    background-repeat:repeat; */
+    /* Switch the background's for gif effect, but page runs noticeably shorter */
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .row > div {
+    min-width: 200px;
+    min-height: 200px;
+    background-color: #240052;
+    opacity: 0.8;
+    border: 1px solid black;
+  }
+  .row > div:hover {
+    opacity: 0.5;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2em;
+
+  }
+
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .glow-red {
+    font-size: 120px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    background-color: (36, 0, 82, 0.5);
+    animation: red 1s ease-in-out infinite alternate;
+  }
+  .glow-blue {
+    font-size: 120px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    animation: blue 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00f7, 0 0 40px #ff00f7, 0 0 50px #ff00f7, 0 0 60px #ff00f7, 0 0 70px #ff00f7;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4df6, 0 0 40px #ff4df6, 0 0 50px #ff4df6, 0 0 60px #ff4df6, 0 0 70px #ff4df6, 0 0 80px #ff4df6;
+    }
+  }
+
+  @-webkit-keyframes red {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4d74, 0 0 40px #ff4d74, 0 0 50px #ff4d74, 0 0 60px #ff4d74, 0 0 70px #ff4d74, 0 0 80px #ff4d74;
+    }
+  }
+
+  @-webkit-keyframes blue {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000FF, 0 0 40px #0000FF, 0 0 50px #0000FF, 0 0 60px #0000FF, 0 0 70px #0000FF;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #684dff, 0 0 40px #684dff, 0 0 50px #684dff, 0 0 60px #684dff, 0 0 70px #684dff, 0 0 80px #684dff;
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    height: 200px;
+    position: relative;
+  }
+  
+  .center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
