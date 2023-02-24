@@ -29,6 +29,7 @@ function winCondition(matrix) {
   ) {
     h2.innerHTML = "O You Win!";
     endGame();
+    return;
   } else if (
     (matrix[0] === 2 && matrix[1] === 2 && matrix[2] === 2) ||
     (matrix[3] === 2 && matrix[4] === 2 && matrix[5] === 2) ||
@@ -41,11 +42,13 @@ function winCondition(matrix) {
   ) {
     h2.innerHTML = "X You Win!";
     endGame();
+    return;
   }
 
   if (matrix.every((value) => value !== 0)) {
     h2.innerHTML = "Draw!";
     endGame();
+    return;
   }
 }
 
